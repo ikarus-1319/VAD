@@ -186,7 +186,7 @@ def make_visualization(probs, step):
 @torch.no_grad()
 def get_speech_timestamps(audio: torch.Tensor,
                           model,
-                          threshold: float = 0.5,
+                          threshold: float = 0.25,
                           sampling_rate: int = 16000,
                           min_speech_duration_ms: int = 250,
                           max_speech_duration_s: float = float('inf'),
